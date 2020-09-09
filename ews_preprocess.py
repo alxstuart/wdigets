@@ -22,7 +22,7 @@ def preprocess_container(container):
             cef = artifact.get('cef')
             body = cef.get('bodyHtml')
 
-            if 'abuis@splunk.com' in artifact['cef']['toEmail']:
+            if '{insert phish email here}' in artifact['cef']['toEmail']:
                 artifact['name'] = 'Transport - Email Artifact'
                 report_email_body = body             
             else:
